@@ -1,0 +1,94 @@
+.container {
+  max-width: 1000px;
+  height: auto;
+  padding-top: 15px;
+  color: #ffffff;
+}
+
+.navbar-top {
+  height: 45px;
+}
+
+hr {
+  margin-top: 8px;
+  margin-bottom: 5px;
+  background-color: white;
+  border: 0 none;
+  color: white;
+  height: 1.5px;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+}
+
+.search-bar {
+  height: 40px;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.search-bar > div,
+.search-bar > input {
+  padding-top: 0px;
+  padding-bottom: 2px;
+}
+
+.search-bar > input {
+  height: 30px;
+  background-color: transparent;
+}
+
+.search-bar > div {
+  margin-top: -4px;
+}
+
+.group-items-lg {
+  padding-top: 6px;
+}
+
+.group-items-lg > div > span {
+  cursor: pointer;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.navbar-sm {
+  right: 0;
+  margin: 0 !important;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.navbar {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  list-style-type: none;
+  margin-top: 5px;
+}
+
+.active {
+  color: #ffa902;
+}
+
+@media (max-width: 767.98px) {
+  .group-items-lg,
+  .navbar-large,
+  .search-bar--group {
+    display: none;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .navbar-sm {
+    display: none;
+  }
+}
