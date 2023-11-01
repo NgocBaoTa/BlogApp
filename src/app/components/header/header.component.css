@@ -76,7 +76,7 @@ hr {
 }
 
 .active {
-  color: #ffa902;
+  color: var(--main-color);
 }
 
 @media (max-width: 767.98px) {

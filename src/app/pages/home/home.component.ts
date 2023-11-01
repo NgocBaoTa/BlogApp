@@ -13,18 +13,18 @@ export class HomeComponent {
     this.responsiveOptions = [
       {
         breakpoint: '1400px',
-        numVisible: 4,
-        numScroll: 4,
+        numVisible: 5,
+        numScroll: 5,
       },
       {
-        breakpoint: '1220px',
+        breakpoint: '992px',
+        numVisible: 3,
+        numScroll: 3,
+      },
+      {
+        breakpoint: '550px',
         numVisible: 2,
         numScroll: 2,
-      },
-      {
-        breakpoint: '1100px',
-        numVisible: 1,
-        numScroll: 1,
       },
     ];
   }
@@ -57,6 +57,10 @@ export class HomeComponent {
         cate_img: 'https://picsum.photos/id/944/900/500',
       },
       { category: 'Niue', cate_img: 'https://picsum.photos/id/1011/900/500' },
+      {
+        category: 'American Samoa',
+        cate_img: 'https://picsum.photos/id/984/900/500',
+      },
       {
         category: 'American Samoa',
         cate_img: 'https://picsum.photos/id/984/900/500',
