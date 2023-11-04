@@ -92,7 +92,14 @@
   height: 220px;
   border-radius: 10px;
   opacity: 0.4;
-  background: rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+  background: #000;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  border-radius: 10px;
 }
 
 .cate_name {
@@ -100,12 +107,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* background-color: rgba(0, 0, 0, 0.7); 
-  color: #fff;  */
-  /* padding: 5px;  */
-  color: #000;
+  color: #fff;
   font-size: 16px;
-
   text-align: center;
 }
 
@@ -122,6 +125,80 @@
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
+}
+
+#plp-paginate {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#plp-paginate > .pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#plp-paginate > .pagination > li > a,
+#plp-paginate > .pagination > li > span {
+  color: #000;
+  background-color: #fff;
+  border: none;
+  padding: 6px 8px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#plp-paginate > .pagination > li > .navigate {
+  opacity: 0.7;
+  border-top: 3px;
+  margin: 0px 8px;
+  border: none !important;
+}
+
+.pagination > li > a,
+.pagination > li > span,
+#plp-paginate > .pagination > li > .navigate:hover {
+  border: none;
+}
+
+#plp-paginate > .pagination > li > .navigate:hover {
+  opacity: 1;
+}
+
+#plp-paginate > .pagination > li > a:hover,
+#plp-paginate > .pagination > li > span:hover,
+#plp-paginate > .pagination > li > a:focus,
+#plp-paginate > .pagination > li > span:focus {
+  color: var(--main-color);
+  background-color: #fff;
+}
+
+#plp-paginate > .pagination > .active > a,
+#plp-paginate > .pagination > .active > span,
+#plp-paginate > .pagination > .active > a:hover,
+#plp-paginate > .pagination > .active > span:hover,
+#plp-paginate > .pagination > .active > a:focus,
+#plp-paginate > .pagination > .active > span:focus {
+  color: var(--main-color);
+  border: none;
+  background-color: #fff;
+}
+
+.flip-horizontal {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.sc-sprite-hotbuys-arrow {
+  background-position: -256px -116px;
+  width: 30px;
+  height: 30px;
+  background-image: url(http://localhost:8180/sams/redesign/shared/sherpa/sprite.png);
+  display: inline-block;
 }
 
 /* ================================  BREAKPOINT  ================================== */

@@ -25,41 +25,64 @@
     >
       <ng-template let-image pTemplate="item">
         <div class="cate_item">
-          <img src="{{ image.cate_img }}" class="cate_img" alt="..." />
-          <div class="cate_name">{{ image.category }}</div>
+          <div class="overlay">
+            <img src="{{ image.cate_img }}" class="cate_img" alt="..." />
+            <div class="cate_name">{{ image.category }}</div>
+          </div>
         </div>
       </ng-template>
     </p-carousel>
   </div>
 
-  <div class="featured-list text-center">
-    <h3>Featured Explore</h3>
-
-    <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 g-4 text-center featured_list--posts">
-      <div class="col">
-        <app-post-card></app-post-card>
-      </div>
-      <div class="col">
-        <app-post-card></app-post-card>
-      </div>
-      <div class="col">
-        <app-post-card></app-post-card>
-      </div>
-      <div class="col">
-        <app-post-card></app-post-card>
-      </div>
-      <div class="col">
-        <app-post-card></app-post-card>
-      </div>
-      <div class="col">
-        <app-post-card></app-post-card>
-      </div>
-      <div class="col">
-        <app-post-card></app-post-card>
-      </div>
-      <div class="col">
+  <div class="featured-list text-center" id="plp-paginate">
+    <h3 id="scrollTarget">Featured Explore</h3>
+    <!-- items being paged -->
+    <div
+      class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 g-4 text-center featured_list--posts"
+    >
+      <div *ngFor="let item of items" class="col">
         <app-post-card></app-post-card>
       </div>
     </div>
+
+    <!-- pager -->
+    <ul *ngIf="pager.totalPages > 1" class="pagination">
+      <li *ngIf="pager.currentPage !== 1">
+        <a
+          (click)="setPage(pager.currentPage - 1); $event.preventDefault()"
+          class="sc-sprite-hotbuys-arrow flip-horizontal navigate"
+          href="#"
+        ></a>
+      </li>
+      <!-- <li [class.active]="pager.currentPage === 1">
+          <a (click)="setPage(1)" href="#">1</a>
+        </li> -->
+      <li *ngIf="pager.startEllipses">
+        <span>...</span>
+      </li>
+      <li
+        *ngFor="let page of pager.pages"
+        [class.active]="pager.currentPage === page"
+      >
+        <a (click)="setPage(page); $event.preventDefault()" href="#">{{
+          page
+        }}</a>
+      </li>
+      <li *ngIf="pager.endEllipses">
+        <span>...</span>
+      </li>
+      <!-- <li [class.active]="pager.currentPage === pager.totalPages">
+          <a (click)="setPage(pager.totalPages)" href="#">{{
+            pager.totalPages
+          }}</a>
+        </li> -->
+      <li *ngIf="pager.currentPage !== pager.totalPages">
+        <a
+          class="sc-sprite-hotbuys-arrow navigate"
+          (click)="setPage(pager.currentPage + 1)"
+          href="#"
+        ></a>
+      </li>
+    </ul>
   </div>
 </div>
