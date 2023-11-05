@@ -221,7 +221,7 @@
   width: 65%;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
 }
 
 .latest_list--side {
@@ -353,6 +353,41 @@
   flex: 1;
 }
 
+/* ================================  VIDEO  ================================== */
+
+.home_video {
+  position: relative;
+  margin-top: 60px;
+}
+
+video {
+  position: positive;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 450px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  z-index: 0;
+}
+
+.home_video--overlay {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home_video--overlay h4 {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
 /* ================================  BREAKPOINT  ================================== */
 
 @media (max-width: 900px) {
@@ -365,7 +400,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .subcribe_form--fullsize {
     display: block;
     text-align: center;
@@ -387,9 +422,25 @@
     font-size: 26px;
   }
 
+  .subcribe_form--formbox {
+    margin-bottom: 15px;
+  }
+
   .subcribe_form--formbox > button {
     margin-top: 0;
     width: 100px;
+  }
+
+  video {
+    height: 380px;
+  }
+
+  .home_video--overlay {
+    width: 70%;
+  }
+
+  .home_video--overlay p {
+    font-size: 14px;
   }
 }
 
@@ -511,6 +562,23 @@
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 5px;
+  }
+
+  video {
+    height: 300px;
+  }
+
+  .home_video--overlay {
+    width: 85%;
+  }
+
+  .home_video--overlay h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+
+  .home_video--overlay p {
+    font-size: 12px;
   }
 }
 
