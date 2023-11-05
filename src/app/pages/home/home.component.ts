@@ -73,13 +73,13 @@ export class HomeComponent {
     ];
   }
 
-  items: number[] = [12, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13];
+  featured_posts: number[] = [12, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13];
   dummyItems: number[] = Array.from(
-    { length: this.items.length },
+    { length: this.featured_posts.length },
     (_, i) => i + 1
   );
   pager: any = {};
-  totalCount: number = this.items.length;
+  totalCount: number = this.featured_posts.length;
   limit: number = 6;
 
   setPage(page: number) {
@@ -92,7 +92,7 @@ export class HomeComponent {
       page,
       this.limit
     );
-    this.items = this.dummyItems.slice(
+    this.featured_posts = this.dummyItems.slice(
       this.pager.startIndex,
       this.pager.endIndex + 1
     );

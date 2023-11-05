@@ -38,9 +38,9 @@
     <h3 id="scrollTarget">Featured Explore</h3>
     <!-- items being paged -->
     <div
-      class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 g-4 text-center featured_list--posts"
+      class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-2 g-4 text-center featured_list--posts"
     >
-      <div *ngFor="let item of items" class="col">
+      <div *ngFor="let item of featured_posts" class="col">
         <app-post-card></app-post-card>
       </div>
     </div>
@@ -84,5 +84,62 @@
         ></a>
       </li>
     </ul>
+  </div>
+
+  <div class="latest_list text-center">
+    <h3>Our Latest Blogs</h3>
+    <div class="latest_list--main">
+      <div class="latest_posts--list">
+        <!-- <div *ngFor="let item of items" class="col"> -->
+        <app-horizontal-post-card></app-horizontal-post-card>
+        <!-- </div> -->
+        <app-horizontal-post-card></app-horizontal-post-card>
+        <app-horizontal-post-card></app-horizontal-post-card>
+        <app-horizontal-post-card></app-horizontal-post-card>
+        <app-horizontal-post-card></app-horizontal-post-card>
+      </div>
+      <div class="latest_list--side">
+        <div class="popular_list">
+          <h5>Popular posts</h5>
+          <div class="popular_posts">
+            <app-popular-post-card></app-popular-post-card>
+            <app-popular-post-card></app-popular-post-card>
+            <app-popular-post-card></app-popular-post-card>
+            <app-popular-post-card></app-popular-post-card>
+            <app-popular-post-card></app-popular-post-card>
+          </div>
+        </div>
+
+        <div class="follow_form">
+          <h5>Follow me</h5>
+          <div class="follow_form--icons">
+            <div class="follow_form--icon">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+            </div>
+            <div class="follow_form--icon">
+              <a href="#"><i class="bi bi-twitter"></i></a>
+            </div>
+
+            <div class="follow_form--icon">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+            <div class="follow_form--icon">
+              <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <form class="subcribe_form">
+          <div class="subcribe_form--header">Subcribe Today</div>
+          <div class="subcribe_form--text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut
+            necessitatibus voluptates vero.
+          </div>
+          <input type="text" placeholder="Full Name" />
+          <input type="text" placeholder="Your Email" />
+          <button type="submit">SUBCRIBE</button>
+        </form>
+      </div>
+    </div>
   </div>
 </div>

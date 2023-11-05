@@ -1,0 +1,55 @@
+.horizontal_post--cart {
+  height: 180px;
+  border: none;
+}
+
+.post_card--image {
+  height: 90%;
+  max-height: 180px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.post_card--body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding-top: 0px;
+  gap: 3px;
+}
+
+.post_card--title {
+  margin: 0;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.post_card--author {
+  margin-left: 5px;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.post_card--date {
+  font-size: 11px;
+  color: var(--normal-text-color);
+}
+
+.post_card--text {
+  margin: 0;
+  font-size: 14px;
+  color: var(--normal-text-color);
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+.post_card--readmore {
+  color: var(--main-color);
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 4px;
+  cursor: pointer;
+}

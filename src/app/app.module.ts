@@ -9,6 +9,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PostCardComponent } from './components/post-card/post-card.component';
+import { HorizontalPostCardComponent } from './components/horizontal-post-card/horizontal-post-card.component';
+import { PopularPostCardComponent } from './components/popular-post-card/popular-post-card.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { PostCardComponent } from './components/post-card/post-card.component';
     HeaderComponent,
     FooterComponent,
     PostCardComponent,
+    HorizontalPostCardComponent,
+    PopularPostCardComponent,
   ],
   imports: [
     BrowserModule,
