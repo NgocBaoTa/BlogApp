@@ -1,0 +1,130 @@
+.subcribe_form--fullsize {
+  color: #fff;
+  padding: 20px;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.subcribe_form--header {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.subcribe_form--text {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.subcribe_form--formbox > input {
+  border-radius: 8px;
+  border: none;
+  height: 35px;
+  padding: 10px;
+}
+
+.subcribe_form--formbox > input::placeholder {
+  color: #d7d7d7;
+  font-size: 15px;
+}
+
+.subcribe_form--formbox > input:focus {
+  outline: none;
+}
+
+.subcribe_form--formbox > button {
+  border: none;
+  border-radius: 8px;
+  color: var(--main-color);
+  font-size: 15px;
+  height: 35px;
+  background-color: #fff;
+  font-weight: 500;
+}
+
+.subcribe_form--formbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.subcribe_form--formbox > input {
+  flex: 3;
+}
+
+.subcribe_form--formbox > button {
+  flex: 1;
+}
+
+/* ================================  BREAKPOINT  ================================== */
+
+@media (max-width: 992px) {
+  .subcribe_form--fullsize {
+    text-align: center;
+    border-radius: 0px;
+    gap: 10px;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  .subcribe_form--header {
+    font-size: 26px;
+  }
+
+  .subcribe_form--formbox {
+    margin-bottom: 15px;
+  }
+
+  .subcribe_form--formbox > button {
+    margin-top: 0;
+    width: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .subcribe_form--fullsize {
+    margin-top: 15px;
+  }
+
+  .subcribe_form--formbox {
+    flex-direction: column;
+    width: 80%;
+    margin-top: 10px;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .subcribe_form--header {
+    font-size: 20px;
+  }
+
+  .subcribe_form--text {
+    font-size: 14px;
+  }
+
+  .subcribe_form--formbox > input {
+    height: 30px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+  }
+
+  .subcribe_form--formbox > input::placeholder {
+    font-size: 14px;
+  }
+
+  .subcribe_form--formbox > button {
+    font-size: 14px;
+    height: 30px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+  }
+}
