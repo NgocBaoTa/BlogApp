@@ -76,19 +76,18 @@ hr {
 }
 
 .active {
-  color: var(--main-color);
+  color: var(--main-color) !important;
+}
+
+.navbar-sm {
+  display: none;
 }
 
 @media (max-width: 767.98px) {
   .group-items-lg,
   .navbar-large,
-  .search-bar--group {
-    display: none;
-  }
-}
-
-@media (min-width: 767.98px) {
-  .navbar-sm {
+  .search-bar--group,
+  hr {
     display: none;
   }
 }

@@ -77,7 +77,12 @@
       <div class="row text-end container-fluid">
         <div class="col-auto"></div>
         <button
-          style="background-color: #fff; margin-top: -3px; padding-left: 8px; padding-right: 8px;"
+          style="
+            background-color: #fff;
+            margin-top: -3px;
+            padding-left: 8px;
+            padding-right: 8px;
+          "
           class="col-auto text-end navbar-toggler"
           type="button"
           data-bs-toggle="offcanvas"
@@ -85,7 +90,7 @@
           aria-controls="offcanvasNavbar"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon" style="font-size: 1rem;"></span>
+          <span class="navbar-toggler-icon" style="font-size: 1rem"></span>
         </button>
         <div
           class="offcanvas offcanvas-end"
@@ -105,25 +110,67 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active">Home</a>
+                <a
+                  class="nav-link"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                  routerLinkActive="active"
+                  [routerLink]="['/']"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link">Category</a>
+                <a
+                  class="nav-link"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                  routerLinkActive="active"
+                  [routerLink]="['/category']"
+                  >Category</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link">Posts</a>
+                <a
+                  class="nav-link"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                  routerLinkActive="active"
+                  [routerLink]="['/post']"
+                  >Posts</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link">About</a>
+                <a
+                  class="nav-link"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                  routerLinkActive="active"
+                  [routerLink]="['/about']"
+                  >About</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link">Contact</a>
+                <a
+                  class="nav-link"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                  routerLinkActive="active"
+                  [routerLink]="['/contact']"
+                  >Contact</a
+                >
               </li>
               <li class="nav-item">
-                <a class="login nav-link">Login</a>
+                <a
+                  class="login nav-link"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                  routerLinkActive="active"
+                  [routerLink]="['/login']"
+                  >Login</a
+                >
               </li>
               <li class="nav-item">
-                <a class="signup nav-link">Sign up</a>
+                <a
+                  class="signup nav-link"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                  routerLinkActive="active"
+                  [routerLink]="['/signup']"
+                  >Sign up</a
+                >
               </li>
             </ul>
           </div>
@@ -136,19 +183,49 @@
 
   <ul class="navbar navbar-large">
     <li class="nav-item">
-      <a class="nav-link active">Home</a>
+      <a
+        class="nav-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLinkActive="active"
+        [routerLink]="['/']"
+        >Home</a
+      >
     </li>
     <li class="nav-item">
-      <a class="nav-link">Category</a>
+      <a
+        class="nav-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLinkActive="active"
+        [routerLink]="['/category']"
+        >Category</a
+      >
     </li>
     <li class="nav-item">
-      <a class="nav-link">Posts</a>
+      <a
+        class="nav-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLinkActive="active"
+        [routerLink]="['/post']"
+        >Posts</a
+      >
     </li>
     <li class="nav-item">
-      <a class="nav-link">About</a>
+      <a
+        class="nav-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLinkActive="active"
+        [routerLink]="['/about']"
+        >About</a
+      >
     </li>
     <li class="nav-item">
-      <a class="nav-link">Contact</a>
+      <a
+        class="nav-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLinkActive="active"
+        [routerLink]="['/contact']"
+        >Contact</a
+      >
     </li>
   </ul>
 </div>
