@@ -1,0 +1,19 @@
+.header {
+  background-image: url("https://industry.stateofwatourism.com/wp-content/uploads/2022/11/header-1.jpg");
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header_bg {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 1px;
+  background: linear-gradient(
+    89.82deg,
+    rgba(0, 0, 0, 0.9) -10%,
+    rgba(0, 0, 0, 0.5) 50.45%,
+    rgba(10, 10, 10, 0.9) 100%
+  );
+}
