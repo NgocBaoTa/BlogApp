@@ -11,6 +11,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PostCardComponent } from './components/post-card/post-card.component';
 import { HorizontalPostCardComponent } from './components/horizontal-post-card/horizontal-post-card.component';
 import { PopularPostCardComponent } from './components/popular-post-card/popular-post-card.component';
+import { CategoryComponent } from './pages/category/category.component';
+import { SubcribeFormComponent } from './components/subcribe-form/subcribe-form.component';
+import { CategoryListComponent } from './components/category-list/category-list.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,9 @@ import { PopularPostCardComponent } from './components/popular-post-card/popular
     PostCardComponent,
     HorizontalPostCardComponent,
     PopularPostCardComponent,
+    CategoryComponent,
+    SubcribeFormComponent,
+    CategoryListComponent,
   ],
   imports: [
     BrowserModule,

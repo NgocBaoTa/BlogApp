@@ -15,24 +15,10 @@
 </div>
 
 <div class="container text-center">
-  <div class="category_list">
-    <h3>Choose a Category</h3>
-    <p-carousel
-      [value]="images"
-      [numVisible]="3"
-      [numScroll]="1"
-      [responsiveOptions]="responsiveOptions"
-    >
-      <ng-template let-image pTemplate="item">
-        <div class="cate_item">
-          <div class="overlay">
-            <img src="{{ image.cate_img }}" class="cate_img" alt="..." />
-            <div class="cate_name">{{ image.category }}</div>
-          </div>
-        </div>
-      </ng-template>
-    </p-carousel>
-  </div>
+  <app-category-list
+    [images]="images"
+    [responsiveOptions]="responsiveOptions"
+  ></app-category-list>
 
   <div class="featured-list text-center" id="plp-paginate">
     <h3 id="scrollTarget">Featured Explore</h3>
@@ -144,18 +130,9 @@
   </div>
 </div>
 
-<form class="subcribe_form--fullsize">
-  <div class="subcribe_form--header">Subcribe Today</div>
-  <div class="subcribe_form--text">
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut necessitatibus
-    voluptates vero.
-  </div>
-  <div class="subcribe_form--formbox">
-    <input type="text" placeholder="Full Name" />
-    <input type="text" placeholder="Your Email" />
-    <button type="submit">SUBCRIBE</button>
-  </div>
-</form>
+<div class="subcribe_form--full">
+  <app-subcribe-form></app-subcribe-form>
+</div>
 
 <div class="home_video">
   <video

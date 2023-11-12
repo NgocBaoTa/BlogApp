@@ -9,15 +9,10 @@
 
 .header-bg {
   width: 100%;
-
   position: relative;
   height: 600px;
   background: linear-gradient(
-    /* 89.82deg,
-    #1e1e1e -6.88%,
-    rgba(0, 0, 0, 0) 87.45%,
-    #1e1e1e 100.88% */
-      89.82deg,
+    89.82deg,
     rgba(0, 0, 0, 0.9) -10%,
     rgba(0, 0, 0, 0.5) 50.45%,
     rgba(10, 10, 10, 0.9) 100%
@@ -59,58 +54,6 @@
 .box-yellow {
   color: #ffa902;
   font-weight: bold;
-}
-
-/* ================================  CATEGORY CAROUSEL  ================================== */
-
-.category_list {
-  width: 80%;
-  min-width: 500px;
-  margin: 50px auto;
-  text-align: center;
-}
-
-.category_list > h3 {
-  margin-bottom: 30px;
-  font-weight: 700;
-  font-size: 28px;
-}
-
-.cate_item {
-  width: 100%;
-  max-width: 250px;
-  height: 220px;
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.cate_img {
-  cursor: pointer;
-  max-width: 100%;
-  height: 220px;
-  border-radius: 10px;
-  opacity: 0.4;
-}
-
-.overlay {
-  background: #000;
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-  border-radius: 10px;
-}
-
-.cate_name {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 16px;
-  text-align: center;
 }
 
 /* ================================  FEATURED LIST  ================================== */
@@ -279,8 +222,7 @@
   color: var(--secondary-text-color);
 }
 
-.subcribe_form,
-.subcribe_form--fullsize {
+.subcribe_form {
   color: #fff;
   padding: 20px;
   background-color: var(--main-color);
@@ -302,27 +244,23 @@
   margin-bottom: 5px;
 }
 
-.subcribe_form > input,
-.subcribe_form--formbox > input {
+.subcribe_form > input {
   border-radius: 8px;
   border: none;
   height: 35px;
   padding: 10px;
 }
 
-.subcribe_form > input::placeholder,
-.subcribe_form--formbox > input::placeholder {
+.subcribe_form > input::placeholder {
   color: #d7d7d7;
   font-size: 15px;
 }
 
-.subcribe_form > input:focus,
-.subcribe_form--formbox > input:focus {
+.subcribe_form > input:focus {
   outline: none;
 }
 
-.subcribe_form > button,
-.subcribe_form--formbox > button {
+.subcribe_form > button {
   border: none;
   border-radius: 8px;
   color: var(--main-color);
@@ -333,24 +271,8 @@
   font-weight: 500;
 }
 
-.subcribe_form--fullsize {
+.subcribe_form--full {
   display: none;
-}
-
-.subcribe_form--formbox {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 25px;
-  gap: 20px;
-}
-
-.subcribe_form--formbox > input {
-  flex: 3;
-}
-
-.subcribe_form--formbox > button {
-  flex: 1;
 }
 
 /* ================================  VIDEO  ================================== */
@@ -401,15 +323,6 @@ video {
 }
 
 @media (max-width: 992px) {
-  .subcribe_form--fullsize {
-    display: block;
-    text-align: center;
-    border-radius: 0px;
-    gap: 20px;
-    width: 100%;
-    max-width: 100vw;
-  }
-
   .latest_list--side {
     display: none;
   }
@@ -418,17 +331,8 @@ video {
     width: 100%;
   }
 
-  .subcribe_form--header {
-    font-size: 26px;
-  }
-
-  .subcribe_form--formbox {
-    margin-bottom: 15px;
-  }
-
-  .subcribe_form--formbox > button {
-    margin-top: 0;
-    width: 100px;
+  .subcribe_form--full {
+    display: block;
   }
 
   video {
@@ -482,24 +386,6 @@ video {
     margin-left: 5px;
     margin-right: 5px;
   }
-
-  .category_list {
-    width: 90%;
-    min-width: 0px;
-  }
-
-  .cate_item {
-    width: 100%;
-    max-width: 180px;
-    height: 150px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  .cate_img {
-    max-width: 100%;
-    height: 150px;
-  }
 }
 
 @media (max-width: 576px) {
@@ -522,48 +408,6 @@ video {
     min-width: 0px;
   }
 
-  .subcribe_form--fullsize {
-    margin-top: 15px;
-  }
-
-  .subcribe_form--formbox {
-    flex-direction: column;
-    width: 80%;
-    margin-top: 15px;
-    gap: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .subcribe_form--header {
-    font-size: 20px;
-  }
-
-  .subcribe_form--text {
-    font-size: 14px;
-  }
-
-  .subcribe_form--formbox > input {
-    height: 30px;
-    width: 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 5px;
-  }
-
-  .subcribe_form--formbox > input::placeholder {
-    font-size: 14px;
-  }
-
-  .subcribe_form--formbox > button {
-    font-size: 14px;
-    height: 30px;
-    width: 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 5px;
-  }
-
   video {
     height: 300px;
   }
@@ -580,48 +424,4 @@ video {
   .home_video--overlay p {
     font-size: 12px;
   }
-}
-
-/* ==============================  CONFIG PRIMENG CSS ============================== */
-
-::ng-deep .p-carousel .p-carousel-content .p-carousel-prev,
-::ng-deep .p-carousel .p-carousel-content .p-carousel-next {
-  width: 2rem;
-  height: 2rem;
-  color: #6c757d;
-  border: 0 none;
-  background: transparent;
-  border-radius: 50%;
-  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
-  margin: 0.5rem;
-  display: none;
-}
-
-/* ::ng-deep .p-carousel .p-carousel-indicators .p-carousel-indicator button {
-  background-color: #e9ecef;
-  width: 1rem;
-  height: 1rem;
-  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
-  border-radius: 50%;
-  margin-left: 5px;
-  border: none;
-} */
-
-::ng-deep .p-carousel .p-carousel-indicators {
-  margin-top: 5px;
-}
-
-::ng-deep .p-carousel .p-carousel-indicators .p-carousel-indicator button {
-  width: 40px;
-  height: 6px;
-  margin-left: 5px;
-  margin-top: 10px;
-}
-
-::ng-deep .p-carousel .p-carousel-indicators .p-carousel-indicator::marker {
-  color: #fff;
-}
-
-::ng-deep .p-carousel .p-carousel-indicators .p-highlight button {
-  background-color: var(--main-color);
 }
