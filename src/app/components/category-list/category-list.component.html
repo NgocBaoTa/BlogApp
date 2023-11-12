@@ -1,0 +1,18 @@
+<div class="category_list">
+  <h3>Choose a Category</h3>
+  <p-carousel
+    [value]="images"
+    [numVisible]="3"
+    [numScroll]="1"
+    [responsiveOptions]="responsiveOptions"
+  >
+    <ng-template let-image pTemplate="item">
+      <div class="cate_item">
+        <div class="overlay">
+          <img src="{{ image.cate_img }}" class="cate_img" alt="..." />
+          <div class="cate_name">{{ image.category }}</div>
+        </div>
+      </div>
+    </ng-template>
+  </p-carousel>
+</div>
