@@ -6,3 +6,19 @@
     --normal-text-color: #868383;
     --secondary-text-color: #696969;
 }
+
+
+body {
+    overflow-x: hidden;
+}
+
+app-root {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-body {
+    flex: 1;
+}
