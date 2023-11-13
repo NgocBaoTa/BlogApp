@@ -14,6 +14,7 @@ import { PopularPostCardComponent } from './components/popular-post-card/popular
 import { CategoryComponent } from './pages/category/category.component';
 import { SubcribeFormComponent } from './components/subcribe-form/subcribe-form.component';
 import { CategoryListComponent } from './components/category-list/category-list.component';
+import { AuthorComponent } from './pages/author/author.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { CategoryListComponent } from './components/category-list/category-list.
     CategoryComponent,
     SubcribeFormComponent,
     CategoryListComponent,
+    AuthorComponent,
   ],
   imports: [
     BrowserModule,
