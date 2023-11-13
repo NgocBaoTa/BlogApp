@@ -90,4 +90,8 @@ hr {
   hr {
     display: none;
   }
+
+  .navbar-sm {
+    display: block;
+  }
 }
