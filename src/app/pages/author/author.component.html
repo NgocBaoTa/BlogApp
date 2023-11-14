@@ -3,3 +3,9 @@
     <app-header></app-header>
   </div>
 </div>
+
+<div class="container author_ctn">
+  <div class="author" *ngFor="let author of authors">
+    <app-author-card [author]="author"></app-author-card>
+  </div>
+</div>

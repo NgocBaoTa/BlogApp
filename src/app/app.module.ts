@@ -15,6 +15,7 @@ import { CategoryComponent } from './pages/category/category.component';
 import { SubcribeFormComponent } from './components/subcribe-form/subcribe-form.component';
 import { CategoryListComponent } from './components/category-list/category-list.component';
 import { AuthorComponent } from './pages/author/author.component';
+import { AuthorCardComponent } from './components/author-card/author-card.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { AuthorComponent } from './pages/author/author.component';
     SubcribeFormComponent,
     CategoryListComponent,
     AuthorComponent,
+    AuthorCardComponent,
   ],
   imports: [
     BrowserModule,
