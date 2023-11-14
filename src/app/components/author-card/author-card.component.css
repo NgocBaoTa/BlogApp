@@ -1,0 +1,179 @@
+.card {
+  border-color: var(--main-color);
+  border: 1.35px solid #ffa902;
+  box-shadow: 0 3px 6px rgba(255, 169, 2, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 8px rgba(255, 169, 2, 0.2);
+}
+
+.author_card {
+  padding: 25px;
+  padding-left: 0px;
+}
+
+.author_info--main {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.author_info--avt > img {
+  width: 150px;
+}
+
+.author_info--username {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+a {
+  color: black;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.author_contact--fb,
+.author_contact--ins,
+.author_contact--youtube {
+  display: inline;
+  margin: 15px;
+}
+
+.author_info--sec {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 17px;
+}
+
+.author_info--desc {
+  color: var(--normal-text-color);
+}
+
+.author_info--quote {
+  color: var(--main-color);
+  font-weight: 500;
+}
+
+.author_info--posts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.author_post--heading {
+  font-weight: 500;
+}
+
+.author_posts--main-lg {
+  display: flex;
+  gap: 10px;
+}
+
+.author_post--more {
+  cursor: pointer;
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 18;
+  text-align: center;
+}
+
+.author_posts--main-md {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  display: none;
+}
+
+.author_posts--main-sm {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .author_posts--main-lg {
+    display: none;
+  }
+
+  .author_posts--main-md {
+    display: block;
+  }
+
+  .author_card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .author_info--main {
+    gap: 5px;
+  }
+
+  .author_info--avt > img {
+    width: 120px;
+  }
+
+  .author_info--username {
+    font-size: 17px;
+  }
+
+  a {
+    margin-bottom: 5px;
+  }
+
+  .author_contact--fb,
+  .author_contact--ins,
+  .author_contact--youtube {
+    margin: 10px;
+  }
+
+  .author_info--sec {
+    gap: 20px;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  .author_info--posts {
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .author_post--more {
+    font-size: 16px;
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .author_posts--main-md {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .accordion {
+    min-width: 0;
+  }
+
+  app-post-card {
+    display: inline-block;
+    max-width: 300px;
+  }
+
+  .author_posts--main-md {
+    display: none;
+  }
+
+  .author_posts--main-sm {
+    display: block;
+    max-width: 320px;
+  }
+}

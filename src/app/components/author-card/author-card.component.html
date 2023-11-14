@@ -1,0 +1,85 @@
+<div class="card text-center">
+  <div class="row g-0 author_card">
+    <div class="author_info--main col-lg-3">
+      <div class="author_info--avt">
+        <img src="{{ author?.avatar }}" class="rounded-circle" alt="Avatar" />
+      </div>
+
+      <div class="author_info--username">{{ author?.username }}</div>
+
+      <div class="author_info--contact">
+        <a
+          class="author_contact--item"
+          href="tel:${exampleAuthorWithIcons.phone}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="author_contact--info">{{ author?.phone }}</span>
+        </a>
+        <a
+          class="author_contact--item"
+          href="mailto:${{ author?.email }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="author_contact--info">{{ author?.email }}</span>
+        </a>
+        <a
+          class="author_contact--item author_contact--fb"
+          href="${{ author?.facebook }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a
+          class="author_contact--item author_contact--ins"
+          href="${{ author?.instagram }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a
+          class="author_contact--item author_contact--youtube"
+          href="${{ author?.youtube }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-youtube"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="author_info--sec col-lg-9">
+      <div class="author_info--quote">"{{ author?.quote }}"</div>
+      <div class="author_info--desc">
+        Jane Smith is a seasoned writer and editor with a passion for
+        storytelling. She has a knack for bringing ideas to life through the
+        written word. With years of experience in the publishing industry, Jane
+        has worked on a diverse range of projects, from investigative journalism
+        to creating compelling marketing content.
+      </div>
+      <div class="author_info--posts">
+        <div class="author_post--heading">Popular Posts</div>
+        <div class="author_posts--main-lg">
+          <app-post-card></app-post-card>
+          <app-post-card></app-post-card>
+          <app-post-card></app-post-card>
+        </div>
+        <div class="author_posts--main-md">
+          <app-horizontal-post-card></app-horizontal-post-card>
+          <app-horizontal-post-card></app-horizontal-post-card>
+          <app-horizontal-post-card></app-horizontal-post-card>
+        </div>
+        <div class="author_posts--main-sm">
+          <app-popular-post-card></app-popular-post-card>
+          <app-popular-post-card></app-popular-post-card>
+          <app-popular-post-card></app-popular-post-card>
+        </div>
+        <div class="author_post--more">More...</div>
+      </div>
+      <!-- <div class="author_post--view">View {{ author?.username }}'s posts</div> -->
+    </div>
+  </div>
+</div>
