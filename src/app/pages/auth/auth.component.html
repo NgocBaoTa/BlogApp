@@ -1,0 +1,57 @@
+<div class="header">
+  <div class="header_bg">
+    <app-header></app-header>
+  </div>
+</div>
+
+<div class="container form_ctn">
+  <div class="auth_container">
+    <form
+      class="signUp"
+      [ngClass]="{
+        'active-sx': isSignUpActive,
+        'inactive-sx': !isSignUpActive
+      }"
+    >
+      <h3>Create Your Account</h3>
+      <p>Just enter your email address and your password to join.</p>
+      <input
+        class="w100"
+        type="email"
+        placeholder="Your Email"
+        required
+        autocomplete="off"
+      />
+      <input type="password" placeholder="Your Password" required />
+      <input type="password" placeholder="Verify Password" required />
+      <button class="form-btn sx log-in" type="button" (click)="toggleForms()">
+        Log In
+      </button>
+      <button class="form-btn dx" type="submit">Sign Up</button>
+    </form>
+    <form
+      class="signIn"
+      [ngClass]="{
+        'active-dx': isSignInActive,
+        'inactive-dx': !isSignInActive
+      }"
+    >
+      <h3>Faradise</h3>
+      <p>
+        Welcome back! Let's explore new places and share your memorable
+        experiences.
+      </p>
+      <input
+        type="email"
+        placeholder="Your Email"
+        autocomplete="off"
+        required
+      />
+      <input type="password" placeholder="Your Password" required />
+      <button class="form-btn sx back" type="button" (click)="toggleForms()">
+        Back
+      </button>
+      <button class="form-btn dx" type="submit">Log In</button>
+    </form>
+  </div>
+</div>
