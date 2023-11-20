@@ -1,1 +1,53 @@
-<p>about works!</p>
+<div class="header">
+  <div class="header_bg">
+    <app-header></app-header>
+  </div>
+</div>
+
+<div class="container text-center">
+  <div class="logo">To Travel is to Live</div>
+  <div class="about_main">
+    <div class="about_main--text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo enim
+      blanditiis ea eius eum magnam, possimus, dolor repellat quae totam vero?
+      Neque suscipit tempora est, praesentium dignissimos quod accusamus
+      pariatur recusandae magnam beatae quo aperiam animi expedita odit.
+      Reiciendis, explicabo!
+    </div>
+
+    <div class="about_main--gallery">
+      <!-- <video class="col-6 img-fluid" autoplay loop muted>
+        <source
+          src="https://mdbcdn.b-cdn.net/img/video/forest.mp4"
+          type="video/mp4"
+        />
+      </video> -->
+      <mat-grid-list cols="4" gutterSize="16px" class="image-list">
+        <mat-grid-tile
+          *ngFor="let image of images"
+          [colspan]="image.cols"
+          [rowspan]="image.rows"
+        >
+          <div
+            class="image-container"
+            (mouseover)="showTitle(image)"
+            (mouseout)="hideTitle()"
+          >
+            <img
+              style="width: 100%; height: 100%"
+              src="{{ image.url }}"
+              alt="{{ image.title }}"
+              class="img-fluid"
+            />
+            <div class="image-title" [style.opacity]="titleOpacity">
+              {{ image.title }}
+            </div>
+          </div>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+    <div class="subcribe_form--lg"><app-subcribe-form></app-subcribe-form></div>
+  </div>
+</div>
+
+<div class="subcribe_form--md"><app-subcribe-form></app-subcribe-form></div>

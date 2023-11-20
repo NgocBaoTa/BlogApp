@@ -17,6 +17,7 @@ import { CategoryListComponent } from './components/category-list/category-list.
 import { AuthorComponent } from './pages/author/author.component';
 import { AuthorCardComponent } from './components/author-card/author-card.component';
 import { AboutComponent } from './pages/about/about.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -38,9 +39,10 @@ import { AboutComponent } from './pages/about/about.component';
     BrowserModule,
     BrowserAnimationsModule,
     CarouselModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatGridListModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
