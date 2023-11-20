@@ -18,6 +18,7 @@ import { AuthorComponent } from './pages/author/author.component';
 import { AuthorCardComponent } from './components/author-card/author-card.component';
 import { AboutComponent } from './pages/about/about.component';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     AuthorComponent,
     AuthorCardComponent,
     AboutComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

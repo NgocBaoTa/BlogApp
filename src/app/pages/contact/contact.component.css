@@ -1,0 +1,139 @@
+.header {
+  background-image: url("https://industry.stateofwatourism.com/wp-content/uploads/2022/11/header-1.jpg");
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.header_bg {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 1px;
+  background: linear-gradient(
+    89.82deg,
+    rgba(0, 0, 0, 0.9) -10%,
+    rgba(0, 0, 0, 0.5) 50.45%,
+    rgba(10, 10, 10, 0.9) 100%
+  );
+}
+
+.contact_img > img {
+  width: 100%;
+  height: 320px;
+}
+
+.contact_main {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact_main--header {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--main-color);
+}
+
+.subcribe_form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subcribe_form > input {
+  height: 40px;
+  padding: 10px;
+  font-size: 17px;
+  width: 90%;
+  border-radius: 8px;
+  border: 1.5px solid #000;
+}
+
+.subcribe_form > input::placeholder {
+  font-size: 17px;
+}
+
+.subcribe_form > input:focus {
+  border: 1.5px solid var(--main-color);
+  outline: none;
+}
+
+.subcribe_form > button {
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 17px;
+  height: 40px;
+  background-color: var(--main-color);
+  font-weight: 500;
+  width: 150px;
+}
+
+.footer_img {
+  height: 400px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.footer_icons {
+  display: flex;
+}
+
+.footer_icon {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.footer_icon > a {
+  color: #000;
+}
+
+@media (max-width: 767.98px) {
+  .contact_img {
+    display: none;
+  }
+
+  .contact_main {
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact_main--header {
+    font-size: 28px;
+  }
+
+  .subcribe_form {
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .subcribe_form > input {
+    height: 35px;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .subcribe_form > input::placeholder {
+    font-size: 16px;
+  }
+
+  .subcribe_form > button {
+    font-size: 16px;
+    height: 35px;
+    width: 150px;
+  }
+
+  .footer_img {
+    height: 300px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+}
