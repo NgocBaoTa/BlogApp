@@ -24,10 +24,8 @@
       </div>
     </div>
     <div class="col-3 group-items-lg text-end row">
-      <div class="col-6 login">
-        <span>Login</span>
-      </div>
-      <div class="col-6 signup"><span>Sign up</span></div>
+      <a class="col-6 login nav-link" [routerLink]="['/auth']">Login</a>
+      <a class="col-6 signup nav-link" [routerLink]="['/auth']">Sign up</a>
     </div>
 
     <nav class="col-9 text-end navbar navbar-sm navbar-expand-lg">
@@ -116,7 +114,7 @@
                   class="login nav-link"
                   [routerLinkActiveOptions]="{ exact: true }"
                   routerLinkActive="active"
-                  [routerLink]="['/login']"
+                  [routerLink]="['/auth']"
                   >Login</a
                 >
               </li>
@@ -125,7 +123,7 @@
                   class="signup nav-link"
                   [routerLinkActiveOptions]="{ exact: true }"
                   routerLinkActive="active"
-                  [routerLink]="['/signup']"
+                  [routerLink]="['/auth']"
                   >Sign up</a
                 >
               </li>
