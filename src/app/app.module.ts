@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'primeng/carousel';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,8 @@ import { AboutComponent } from './pages/about/about.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AuthComponent } from './pages/auth/auth.component';
+
+import { APP_CONFIG, APP_SERVICE_CONFIG } from './AppConfig/appconfig.service';
 
 @NgModule({
   declarations: [
@@ -45,8 +48,14 @@ import { AuthComponent } from './pages/auth/auth.component';
     CarouselModule,
     AppRoutingModule,
     MatGridListModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: APP_SERVICE_CONFIG,
+      useValue: APP_CONFIG,
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

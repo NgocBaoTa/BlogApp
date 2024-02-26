@@ -7,7 +7,7 @@
 <div class="container text-center">
   <div class="accordion" id="accordionPanelsStayOpenExample">
     <div
-      *ngFor="let category of categories; let i = index"
+      *ngFor="let category of categories$ ; let i = index"
       class="accordion-item"
     >
       <h2 class="accordion-header" [id]="'panelsStayOpen-heading-' + i">
@@ -20,7 +20,7 @@
           [attr.data-bs-target]="'#panelsStayOpen-collapse-' + i"
           [attr.aria-controls]="'#panelsStayOpen-collapse-' + i"
         >
-          {{ category.category }}
+          {{ category.categoryName}}
         </button>
       </h2>
       <div

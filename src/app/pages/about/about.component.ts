@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AboutComponent {
   images = [
     {
-      url: 'https://scontent.fyyz1-2.fna.fbcdn.net/v/t39.30808-6/397109581_316810584402508_6053710050598077223_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Go1DVkQdYjgAX94APDc&_nc_ht=scontent.fyyz1-2.fna&oh=00_AfCeiJ_E-Qz7aT93OasM8Qe37wCAdzVJtLRVnbAU2FW7tw&oe=656075B9',
+      url: 'https://scontent.fyyz1-2.fna.fbcdn.net/v/t39.30808-6/397109581_316810584402508_6053710050598077223_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=3635dc&_nc_ohc=vH2sv2BoTGMAX80dzk5&_nc_ht=scontent.fyyz1-2.fna&oh=00_AfARNvGApvzmQKpkQ5dGrvZGUFfzCvfp-teRWH3gn9ol0Q&oe=657C2539',
       title: 'Image 1',
       cols: 2,
       rows: 2,
