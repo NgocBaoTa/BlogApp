@@ -18,7 +18,7 @@ export class CategoriesService {
   getCategory() {
     const header = new HttpHeaders({ token: '12439hinkse8u9d2' });
 
-    return this.http.get<any[]>('category', {
+    return this.http.get<any[]>('/api/category', {
       headers: header,
     });
   }

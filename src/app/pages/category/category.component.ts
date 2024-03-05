@@ -10,20 +10,12 @@ import { CategoriesService } from 'src/app/services/categories.service';
 export class CategoryComponent {
   // categories$ = this.categoryService.getCategory();
   categories$: Category[] = [];
+  // categories = []
   posts: number[] = [12, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13];
 
   constructor(private categoryService: CategoriesService) {}
 
   ngOnInit(): void {
-    // this.categories$.subscribe(
-    //   (data) => {
-    //     console.log('Categories:', data);
-    //   },
-    //   (error) => {
-    //     console.error('Error fetching categories', error);
-    //   }
-    // );
-
     this.categoryService.getCategory().subscribe(
       (data) => {
         this.categories$ = data.map((category) => ({
@@ -41,41 +33,44 @@ export class CategoryComponent {
 
 
 
-    // this.categories = [
+    // this.categories$ = [
     //   {
-    //     category: 'category',
-    //     cate_img: 'https://picsum.photos/id/944/900/500',
+    //     categoryID : '1',
+    //     categoryName: 'category',
+    //     categoryImage: 'https://picsum.photos/id/944/900/500',
+    //     createdAt: new Date(),
+    //     updatedAt: new Date(),
     //   },
-    //   { category: 'Samoa', cate_img: 'https://picsum.photos/id/1011/900/500' },
-    //   { category: 'Tonga', cate_img: 'https://picsum.photos/id/984/900/500' },
-    //   {
-    //     category: 'Cook Island',
-    //     cate_img: 'https://picsum.photos/id/944/900/500',
-    //   },
-    //   { category: 'Niue', cate_img: 'https://picsum.photos/id/1011/900/500' },
-    //   {
-    //     category: 'American Samoa',
-    //     cate_img: 'https://picsum.photos/id/984/900/500',
-    //   },
-    //   {
-    //     category: 'category',
-    //     cate_img: 'https://picsum.photos/id/944/900/500',
-    //   },
-    //   { category: 'Samoa', cate_img: 'https://picsum.photos/id/1011/900/500' },
-    //   { category: 'Tonga', cate_img: 'https://picsum.photos/id/984/900/500' },
-    //   {
-    //     category: 'Cook Island',
-    //     cate_img: 'https://picsum.photos/id/944/900/500',
-    //   },
-    //   { category: 'Niue', cate_img: 'https://picsum.photos/id/1011/900/500' },
-    //   {
-    //     category: 'American Samoa',
-    //     cate_img: 'https://picsum.photos/id/984/900/500',
-    //   },
-    //   {
-    //     category: 'American Samoa',
-    //     cate_img: 'https://picsum.photos/id/984/900/500',
-    //   },
+      // { category: 'Samoa', cate_img: 'https://picsum.photos/id/1011/900/500' },
+      // { category: 'Tonga', cate_img: 'https://picsum.photos/id/984/900/500' },
+      // {
+      //   category: 'Cook Island',
+      //   cate_img: 'https://picsum.photos/id/944/900/500',
+      // },
+      // { category: 'Niue', cate_img: 'https://picsum.photos/id/1011/900/500' },
+      // {
+      //   category: 'American Samoa',
+      //   cate_img: 'https://picsum.photos/id/984/900/500',
+      // },
+      // {
+      //   category: 'category',
+      //   cate_img: 'https://picsum.photos/id/944/900/500',
+      // },
+      // { category: 'Samoa', cate_img: 'https://picsum.photos/id/1011/900/500' },
+      // { category: 'Tonga', cate_img: 'https://picsum.photos/id/984/900/500' },
+      // {
+      //   category: 'Cook Island',
+      //   cate_img: 'https://picsum.photos/id/944/900/500',
+      // },
+      // { category: 'Niue', cate_img: 'https://picsum.photos/id/1011/900/500' },
+      // {
+      //   category: 'American Samoa',
+      //   cate_img: 'https://picsum.photos/id/984/900/500',
+      // },
+      // {
+      //   category: 'American Samoa',
+      //   cate_img: 'https://picsum.photos/id/984/900/500',
+      // },
     // ];
   }
 }
